@@ -19,6 +19,7 @@ TODO
 -Authentication, provide a ready to use authentication solution. It is worth mentioning that authentication could always be implemented by the user.
 -More exception handling!!!
 -Unit testing mostly for the purpose of regression.
+-C (c99 or c11) clientside library & example for this framework, compatible with berkeley sockets and winsocks. 
 
 
 
