@@ -13,7 +13,7 @@ The packet protocol:
 
 TODO
 ****
-<br /><br />
+<br />
 -Encryption, provide some basic encryption, we do not want to add extra overhead to our packets unless authentication or critical information are to be transfered.<br /><br />
 -Authentication protocol, Secure Remote Password protocol (SRP 6), this is a top priority, integrating this protocol in the framework and giving an example on how to use it.<br /><br />
 -Authentication, provide a ready to use authentication solution. It is worth mentioning that authentication could always be implemented by the user.<br /><br />
@@ -27,4 +27,4 @@ MANUAL
 ******
 <br />
 Create 4 new projects for each folder using the existing files. Compile for NET 4.5 (should be compatible with earlier versions too).
-<br /><br /><br />
+<br /><br /><br /><br />
