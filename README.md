@@ -19,3 +19,10 @@ TODO
 -Authentication, provide a ready to use authentication solution. It is worth mentioning that authentication could always be implemented by the user.
 -More exception handling!!!
 -Unit testing mostly for the purpose of regression.
+
+
+
+MANUAL
+******
+Create 4 new projects for each folder using the existing files. Compile for NET 4.5 (should be compatible with earlier versions too).
+
