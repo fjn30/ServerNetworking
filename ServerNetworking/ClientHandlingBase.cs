@@ -78,8 +78,9 @@ namespace ServerNetworking
         protected virtual void Stop()
         {
             this.stop = true;
+            this.ClientSocket.Client.Close();
             if (this.ClientThread != null && this.ClientThread.IsAlive)
-            {
+            { 
                 this.ClientThread.Join();
             }
         }

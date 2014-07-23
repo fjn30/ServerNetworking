@@ -79,6 +79,9 @@ namespace ServerNetworking
         public void Stop()
         {
             this.stop = true;
+
+            //this.DisconnectAllClients();
+
             this.listener.Server.Close();
             this.serverManagerThread.Interrupt();
         }
@@ -143,10 +146,8 @@ namespace ServerNetworking
                         ContinueReclaim = false;
                         ThreadReclaim.Join();
 
-                        foreach (Object Client in ClientSockets)
-                        {
-                            ((Client)Client).StopHandling();
-                        }
+                        this.DisconnectAllClients();
+
 
                     }
                     catch (Exception e)
@@ -156,6 +157,7 @@ namespace ServerNetworking
                         if (e.GetType() == typeof(SocketException) && e.HResult == -2147467259)
                         {
                             this.doMessage("ServerNetworking::Socket", "Socket interrupted...");
+                            this.DisconnectAllClients();
                         }
                         else
                         {
@@ -172,6 +174,14 @@ namespace ServerNetworking
             doMessage("ServerNetworking", "Closing server...");
         }
 
+        public void DisconnectAllClients()
+        {
+            foreach (Object Client in ClientSockets.ToArray())
+            {
+                ((Client)Client).StopHandling();
+            }
+        }
+  
         public void Reclaim()
         {
             while (ContinueReclaim)
