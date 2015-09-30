@@ -15,11 +15,11 @@ TODO
 ****
 <br />
 -Encryption, provide some basic encryption, we do not want to add extra overhead to our packets unless authentication or critical information are to be transfered.<br /><br />
--Authentication protocol, Secure Remote Password protocol (SRP 6), this is a top priority, integrating this protocol in the framework and giving an example on how to use it.<br /><br />
+-Authentication protocol, this is a top priority,.<br /><br />
 -Authentication, provide a ready to use authentication solution. It is worth mentioning that authentication could always be implemented by the user.<br /><br />
 -More exception handling!!!<br /><br />
 -Unit testing mostly for the purpose of regression.<br /><br />
--C (c99 or c11) clientside library & example for this framework, compatible with berkeley sockets and winsocks.<br />
+-C clientside library & example.<br />
 <br />
 <br /><br /><br /><br />
 
