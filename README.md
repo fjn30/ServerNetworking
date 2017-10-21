@@ -1,6 +1,9 @@
 ServerNetworking
 ================
 <br />
+
+geia sou malaka TONY
+
 A simple framework for creating tcp servers in C#. It uses TCPListener, TCPClient and protobuf net for serialization.
 <br /><br />
 The whole framework is built with the Command Pattern in mind, which means that you are able to nest message responses functionality which get executed by the means of an interface, effectively reducing the amount of programming you have to do as a user, you create an object that has your server's functionality and it gets executed for each client connected to your server, you do not have to worry about multithreading, methods are provided that allow you to multicast and share data between threads, as well as attach your logic to an observer that broadcasts the server status.
